@@ -1,0 +1,540 @@
+/* SITE: WILLIAM GIBSON */
+html {
+  background-color: black;
+}
+
+@font-face{
+  font-family: CallingCode;
+  src: url(callingcode.ttf);
+}
+/* BASE */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: CallingCode, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: red;
+  
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+main {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 3em;
+  margin: 0;
+  padding: 0.75em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+header:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: black;
+  filter: blur(2em);
+}
+footer {
+  align-content: right;
+}
+footer p {
+  margin: 3em 0 -5em 0;
+}
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
+  padding: 0.25em;
+  padding-top: 5em;
+  transform: translateY(-10em);
+  z-index: 1;
+  text-align: right;
+}
+
+.nav-active nav {
+  transform: translateY(0);
+}
+
+nav .button {
+  color: red;
+}
+nav .button:hover {
+  color: black;
+  background-color: red;
+  border-color: red;
+}
+
+
+
+/*Q&A*/
+.qna {
+  font-family: CallingCode, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #ffeb3b;
+  
+}
+
+.qna nav .button {
+  color: #ffeb3b;
+}
+.qna nav .button:hover {
+  color: black;
+  background-color: #ffeb3b;
+  border-color: #ffeb3b;
+}
+
+.qna header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 3em;
+  margin: 0;
+  padding: 0.75em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffeb3b;
+}
+.qna header:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: black;
+  filter: blur(2em);
+}
+
+.qna header h1:before {
+  width: 100vw;
+  content: '';
+  height: 2px;
+  background-color: #ffeb3b;
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+}
+
+.qna .menu-toggle:hover {
+  background-color: #ffeb3b;
+  color: black;
+  border-color: #ffeb3b;
+}
+
+
+
+/*books*/
+.books {
+  font-family: CallingCode, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #ff1bff;
+  
+}
+
+.books p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ff1bff;
+}
+
+.books .column img{
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.books nav .button {
+  color: #ff1bff;
+}
+.books nav .button:hover {
+  color: black;
+  background-color: #ff1bff;
+  border-color: #ff1bff;
+}
+
+.books header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 3em;
+  margin: 0;
+  padding: 0.75em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff1bff;
+}
+.books header:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: black;
+  filter: blur(2em);
+}
+
+.books header h1:before {
+  width: 100vw;
+  content: '';
+  height: 2px;
+  background-color: #ff1bff;
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+}
+
+.books .menu-toggle:hover {
+  background-color: #ff1bff;
+  color: black;
+  border-color: #ff1bff;
+}
+
+
+
+/*info*/
+.info {
+  font-family: CallingCode, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #00c1f9;
+  
+}
+
+.info nav .button {
+  color: #00c1f9;
+}
+.info nav .button:hover {
+  color: black;
+  background-color: #00c1f9;
+  border-color: #00c1f9;
+}
+
+.info header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 3em;
+  margin: 0;
+  padding: 0.75em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00c1f9;
+}
+.info header:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: black;
+  filter: blur(2em);
+}
+
+.info header h1:before {
+  width: 100vw;
+  content: '';
+  height: 2px;
+  background-color: #00c1f9;
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+}
+
+.info .menu-toggle:hover {
+  background-color: #00c1f9;
+  color: black;
+  border-color: #00c1f9;
+}
+
+
+
+/* TYPOGRAPHY */
+a {
+  color: blue;
+  text-decoration: none;
+}
+p {
+  margin: 0 0 1em 0;
+  max-width: 40em;
+}
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1em;
+}
+header h1:before {
+  width: 100vw;
+  content: '';
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+}
+blockquote {
+  display: block;
+  margin: -1.5rem 0 2em 1em;
+  text-indent: -1em;
+  font-size: .5em;
+  padding: 0;
+  padding-top: 50%;
+  line-height: 1;
+  position: fixed;
+}
+blockquote:before {
+  position: fixed;
+  content: '\201C';
+  font-size: 1.5em;
+}
+.info blockquote {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+}
+
+/* UTILITIES */
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  padding: 0.125em 0.25em;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  color: white;
+  background-color: blue;
+  border-color: blue;
+}
+.button.white {
+  color: white;
+}
+.button.white:hover,
+.button.current-page {
+  color: blue;
+  background-color: white;
+  border-color: white;
+}
+.padding {
+  padding: 0.25em 1em;
+}
+.margin-bottom {
+  margin-bottom: 5em;
+}
+.margin-top {
+  margin-top: 5em;
+}
+.full-width {
+  width: 100%;
+}
+.full-screen {
+  min-height: 100vmin;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.white {
+  color: white;
+}
+.heading-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 0.25em;
+  background-color: black;
+}
+.heading-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 0.25em;
+  background-color: black;  
+}
+.flip {
+  transform: scale(-1, 1);
+}
+.menu-toggle {  
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 0.125em 0.25em;
+  border: 2px solid;
+  margin-top: -4px;
+  vertical-align: middle;
+  background-color: black;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.menu-toggle:hover {
+  background-color: red;
+  color: black;
+  border-color: red;
+}
+.book-preview {
+  padding-top: 1.5em;
+  border-bottom: 2px solid;
+}
+.book-preview-text {
+  font-size: 2em;
+  overflow-x: scroll;
+  width: auto;
+  max-width: none;
+  white-space: nowrap;
+  padding: 0 0 0.5em 0;
+  text-indent: 0.5rem;
+  margin: 0;
+}
+.blur {
+  position: relative;
+}
+.blur:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -5em;
+  left: -5em;
+  width: 10em;
+  height: 10em;
+  background: red;
+  border-radius: 50%;
+  filter: blur(2.5em);
+}
+.blur .button {
+  color: red;
+}
+.blur .button:hover {
+  color: black;
+  background-color: red;
+  border-color: red;
+}
+.book {
+  border-bottom: 2px solid;
+  padding-top: 4em;
+}
+.book h1 {
+  font-size: 2em;
+}
+.book h2 {
+  margin-bottom: 1em;
+}
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+/*  height: 100vh; */
+  z-index: -1;
+  max-width: 65%;
+}
+  
+
+/* grid stuffs */ 
+
+.grid {
+  padding-top: 25em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  position: relative;
+  padding: 0.25em 1em;
+  width: 100%;
+}
+
+.row {
+  padding-top: 5em;
+}
+
+@media (min-width: 40em) {
+
+  body {
+    font-size: 1em;
+  }
+
+  .column {
+    width: 50%;
+  }
+  .books .column {
+    left: 48%;
+  }
+}
